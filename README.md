@@ -1,10 +1,12 @@
-# hw-portfolio
+# 이한울 Portfolio
+https://starry-hanwool.github.io/vue-hw-portfolio/
 
 # 개발환경
-- vue.js
-- vuex
-- nuxt.js
+- vue.js : 2.9.6
+- nuxt.js : 2.15.4
 - vuetify
+- eslint
+- prettier
 
 
 ## Build Setup
@@ -22,6 +24,7 @@ $ npm run start
 
 # generate static project
 $ npm run generate
-```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+# deploy
+$ push-dir --dir=dist --branch=master
+```
