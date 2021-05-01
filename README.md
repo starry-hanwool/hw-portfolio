@@ -1,4 +1,4 @@
-# hw-portfolio
+# 이한울 Portfolio
 https://starry-hanwool.github.io/vue-hw-portfolio/
 
 # 개발환경
