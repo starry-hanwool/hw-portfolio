@@ -19,22 +19,6 @@
           <h4 class="subheading">JAVA Developer Portfolio</h4>
         </v-col>
       </v-row>
-      <!--      <v-row align="center" justify="center">
-        <v-col cols="8">
-          <div class="certified-badges">
-            <v-avatar size="80">
-              <v-img
-                src="imgs/aws-certified-devops-engineer-professional.png"
-              ></v-img>
-            </v-avatar>
-            <v-avatar size="80">
-              <v-img
-                src="imgs/aws-certified-solutions-architect-associate.png"
-              ></v-img>
-            </v-avatar>
-          </div>
-        </v-col>
-      </v-row>-->
     </v-parallax>
     <div class="main-card-wrap">
       <v-row>

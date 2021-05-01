@@ -3,11 +3,11 @@
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
-      right="right"
       permanent
       expand-on-hover
       fixed
-      height="240"
+      height="210"
+      width="270"
     >
       <v-list-item class="px-2">
         <v-list-item-avatar>
@@ -17,8 +17,11 @@
       </v-list-item>
       <v-divider></v-divider>
 
-      <v-list>
+      <v-list class="py-0">
         <v-list-item>
+          <v-list-item-icon>
+            <v-icon>fas fa-envelope</v-icon>
+          </v-list-item-icon>
           <v-list-item-content>
             <v-list-item-title class="title"> Email </v-list-item-title>
             <v-list-item-subtitle>{{ user.email }}</v-list-item-subtitle>
@@ -27,8 +30,11 @@
       </v-list>
       <v-divider></v-divider>
 
-      <v-list>
+      <v-list class="py-0">
         <v-list-item link>
+          <v-list-item-icon>
+            <v-icon>fas fa-folder-open</v-icon>
+          </v-list-item-icon>
           <v-list-item-content>
             <v-list-item-title class="title"> github </v-list-item-title>
             <v-list-item-subtitle
