@@ -2,9 +2,11 @@
 https://starry-hanwool.github.io/vue-hw-portfolio/
 
 # 개발환경
-- vue.js
-- nuxt.js
+- vue.js : 2.9.6
+- nuxt.js : 2.15.4
 - vuetify
+- eslint
+- prettier
 
 
 ## Build Setup
