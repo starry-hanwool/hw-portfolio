@@ -58,6 +58,24 @@
                 </div>
               </v-col>
             </v-row>
+            <v-row class="mx-0">
+              <v-col cols="1">
+                <v-icon small>fas fa-hdd</v-icon>
+              </v-col>
+              <v-col v-for="skill in project.skills" :key="skill.subject">
+                <div>
+                  <div class="ml-3">
+                    {{ skill.subject }}
+                  </div>
+
+                  <div class="grey--text ml-3 my-2">
+                    <ul v-for="content in skill.content" :key="content">
+                      <li>{{ content }}</li>
+                    </ul>
+                  </div>
+                </div>
+              </v-col>
+            </v-row>
           </v-card-text>
         </v-col>
       </v-row>
