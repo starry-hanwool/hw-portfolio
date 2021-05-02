@@ -5,7 +5,7 @@
     </template>
 
     <v-card outlined>
-      <v-card-title class="headline purple darken-4">
+      <v-card-title class="headline blue-grey darken-4">
         {{ project.title }}
       </v-card-title>
 
@@ -65,7 +65,7 @@
       <v-divider></v-divider>
 
       <v-card-actions class="justify-end">
-        <v-btn color="primary" text @click="dialog = false"> Close </v-btn>
+        <v-btn color="blue-grey" text @click="dialog = false"> Close </v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>

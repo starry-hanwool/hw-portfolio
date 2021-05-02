@@ -57,7 +57,11 @@ export const state = () => ({
       charge: [
         {
           subject: '서버구축',
-          content: ['AWS'],
+          content: [
+            'AWS CodePipeline로 CI/CD 환경 구축',
+            'Fargate를 이용해 Container(ECS)를 배포해 cluster를 serverless 형태로 관리',
+            'qa 서비스는 Rolling Update, prod 서비스는 Blue/Green 타입으로 무중단 배포',
+          ],
         },
         {
           subject: 'API 및 프론트엔드 (단독작업)',
