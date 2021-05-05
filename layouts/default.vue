@@ -82,6 +82,6 @@ export default {
   background-color: var(--v-background-base, white) !important;
 }
 .container {
-  padding: 0 !important;
+  padding-top: 0 !important;
 }
 </style>

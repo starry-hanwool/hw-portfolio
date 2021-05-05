@@ -60,6 +60,10 @@ export default {
 .certified-badges {
   padding-bottom: 15px;
 }
+#main-parallax {
+  width: calc(100% + 24px);
+  left: -12px;
+}
 @media (min-width: 1904px) {
   #main-parallax {
     width: 100%;
