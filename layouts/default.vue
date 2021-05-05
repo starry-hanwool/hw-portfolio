@@ -11,7 +11,7 @@
     >
       <v-list-item class="px-2 accent">
         <v-list-item-avatar>
-          <v-img src="imgs/avatar.jpg"></v-img>
+          <v-img src="imgs/developer.png"></v-img>
         </v-list-item-avatar>
         <v-list-item-title class="white--text">{{
           user.fullName

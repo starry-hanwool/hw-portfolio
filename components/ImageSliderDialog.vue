@@ -4,12 +4,12 @@
       <v-btn color="primary" v-bind="attrs" v-on="on"> 더보기 </v-btn>
     </template>
 
-    <v-card outlined>
+    <v-card outlined style="overflow-x: hidden">
       <v-card-title class="headline primary white--text">
         {{ project.title }}
       </v-card-title>
 
-      <v-row class="my-2">
+      <v-row class="">
         <v-col cols="12" sm="6" md="6" lg="6">
           <v-card-text>
             <v-carousel :height="600">
@@ -50,7 +50,7 @@
                     {{ charge.subject }}
                   </div>
 
-                  <div class="blue-grey--text ml-3 my-2">
+                  <div class="blue-grey--text text--darken-2 ml-3 my-2">
                     <ul v-for="content in charge.content" :key="content">
                       <li>{{ content }}</li>
                     </ul>
@@ -68,7 +68,7 @@
                     {{ skill.subject }}
                   </div>
 
-                  <div class="blue-grey--text ml-3 my-2">
+                  <div class="blue-grey--text text--darken-2 ml-3 my-2">
                     <ul v-for="content in skill.content" :key="content">
                       <li>{{ content }}</li>
                     </ul>
@@ -83,7 +83,7 @@
       <v-divider></v-divider>
 
       <v-card-actions class="justify-end">
-        <v-btn color="blue-grey" text @click="dialog = false"> Close </v-btn>
+        <v-btn color="accent" text @click="dialog = false"> Close </v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>
@@ -106,8 +106,4 @@ export default {
 }
 </script>
 
-<style scoped>
-/*.v-dialog {*/
-/*  overflow-y: initial !important;*/
-/*}*/
-</style>
+<style scoped></style>

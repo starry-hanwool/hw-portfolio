@@ -4,13 +4,13 @@ export const state = () => ({
       id: 7,
       title: '파트너스 서비스',
       subTitle: '집닥',
-      cover: 'imgs/project7/1.png',
+      cover: 'imgs/project7/1.jpg',
       imgs: [
         {
-          src: 'imgs/project7/1.png',
+          src: 'imgs/project7/1.jpg',
         },
         {
-          src: 'imgs/project7/2.png',
+          src: 'imgs/project7/2.jpg',
         },
         {
           src: 'imgs/project7/3.png',
@@ -19,7 +19,7 @@ export const state = () => ({
           src: 'imgs/project7/4.png',
         },
         {
-          src: 'imgs/project7/5.png',
+          src: 'imgs/project7/5.jpg',
         },
         {
           src: 'imgs/project7/6.png',
@@ -170,7 +170,7 @@ export const state = () => ({
       charge: [
         {
           subject: '서버구축 (단독작업)',
-          content: [],
+          content: ['AWS EC2 (테스트 서버)', 'G클라우드 (실서버)'],
         },
         {
           subject: '모바일 앱 API 및 하이브리드 페이지 (단독작업)',
@@ -201,8 +201,8 @@ export const state = () => ({
           subject: '개발환경',
           content: [
             'jdk 1.8',
-            'AWS EC2 (테스트 서버)',
-            'G클라우드 (실서버)',
+            'AWS EC2',
+            'G클라우드',
             'apache',
             'tomcat',
             'MySQL',
@@ -210,14 +210,7 @@ export const state = () => ({
         },
         {
           subject: '기타',
-          content: [
-            'FCM',
-            'Bootpay',
-            'GitLab',
-            'Jenkins',
-            'Postman',
-            'Slack',
-          ],
+          content: ['FCM', 'Bootpay', 'GitLab', 'Jenkins', 'Postman', 'Slack'],
         },
       ],
     },
