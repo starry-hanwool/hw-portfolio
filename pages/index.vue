@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-parallax id="main-parallax" dark height="400" src="imgs/main_1080.jpg">
+    <v-parallax id="main-parallax" dark height="400" src="imgs/main.jpg">
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
           <div class="certified-badges">
@@ -53,10 +53,6 @@ export default {
 }
 </script>
 <style scoped>
-#main-parallax {
-  width: calc(100% + 24px);
-  left: -12px;
-}
 .main-card-wrap {
   padding-top: 50px;
   padding-bottom: 100px;

@@ -26,9 +26,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '@/plugins/vuetify.js',
-  ],
+  plugins: ['@/plugins/vuetify.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -59,16 +57,20 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      options: {
+        customProperties: true
+      },
+      dark: false,
       themes: {
-        dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
+        light: {
+          primary: '#325288',
+          accent: '#114e60',
+          secondary: '#f5cebe',
+          info: '#f4eee8',
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
+          background: '#f4eee8',
         },
       },
     },
@@ -77,9 +79,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     babel: {
-      plugins: [
-        ["@babel/plugin-proposal-private-methods", { "loose": true }]
-      ]
-    }
+      plugins: [['@babel/plugin-proposal-private-methods', { loose: true }]],
+    },
   },
 }

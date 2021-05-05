@@ -92,7 +92,7 @@ export const state = () => ({
             'Docker',
             'S3',
             'Amazon Aurora',
-            'Vue.js / Nuxt.js',
+            'Vue.js',
             'CodePipeline',
             'CodeCommit',
             'CodeBuild',

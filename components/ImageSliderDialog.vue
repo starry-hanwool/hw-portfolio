@@ -1,11 +1,11 @@
 <template>
   <v-dialog v-model="dialog" max-width="1200">
     <template #activator="{ on, attrs }">
-      <v-btn color="blue-grey" v-bind="attrs" v-on="on"> 더보기 </v-btn>
+      <v-btn color="primary" v-bind="attrs" v-on="on"> 더보기 </v-btn>
     </template>
 
     <v-card outlined>
-      <v-card-title class="headline blue-grey darken-4">
+      <v-card-title class="headline primary white--text">
         {{ project.title }}
       </v-card-title>
 
@@ -23,7 +23,7 @@
           </v-card-text>
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="6">
-          <v-card-text>
+          <v-card-text class="info">
             <v-row class="mx-0">
               <v-col cols="1">
                 <v-icon small>fas fa-calendar-check</v-icon>
@@ -50,7 +50,7 @@
                     {{ charge.subject }}
                   </div>
 
-                  <div class="grey--text ml-3 my-2">
+                  <div class="blue-grey--text ml-3 my-2">
                     <ul v-for="content in charge.content" :key="content">
                       <li>{{ content }}</li>
                     </ul>
@@ -68,7 +68,7 @@
                     {{ skill.subject }}
                   </div>
 
-                  <div class="grey--text ml-3 my-2">
+                  <div class="blue-grey--text ml-3 my-2">
                     <ul v-for="content in skill.content" :key="content">
                       <li>{{ content }}</li>
                     </ul>
@@ -106,4 +106,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+/*.v-dialog {*/
+/*  overflow-y: initial !important;*/
+/*}*/
+</style>

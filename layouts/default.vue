@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -9,11 +9,13 @@
       height="210"
       width="270"
     >
-      <v-list-item class="px-2">
+      <v-list-item class="px-2 accent">
         <v-list-item-avatar>
           <v-img src="imgs/avatar.jpg"></v-img>
         </v-list-item-avatar>
-        <v-list-item-title>{{ user.fullName }}</v-list-item-title>
+        <v-list-item-title class="white--text">{{
+          user.fullName
+        }}</v-list-item-title>
       </v-list-item>
       <v-divider></v-divider>
 
@@ -75,3 +77,11 @@ export default {
   },
 }
 </script>
+<style>
+.theme--light.v-application {
+  background-color: var(--v-background-base, white) !important;
+}
+.container {
+  padding: 0 !important;
+}
+</style>
